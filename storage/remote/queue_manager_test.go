@@ -36,13 +36,14 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/atomic"
 
+	writev2 "github.com/prometheus/prometheus/prompb/io/prometheus/remote/write/v2"
+
 	"github.com/prometheus/prometheus/config"
 	"github.com/prometheus/prometheus/model/histogram"
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/prometheus/prometheus/model/relabel"
 	"github.com/prometheus/prometheus/model/timestamp"
 	"github.com/prometheus/prometheus/prompb"
-	writev2 "github.com/prometheus/prometheus/prompb/write/v2"
 	"github.com/prometheus/prometheus/scrape"
 	"github.com/prometheus/prometheus/tsdb/chunks"
 	"github.com/prometheus/prometheus/tsdb/record"

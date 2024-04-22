@@ -24,6 +24,8 @@ import (
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
 
+	writev2 "github.com/prometheus/prometheus/prompb/io/prometheus/remote/write/v2"
+
 	"github.com/gogo/protobuf/proto"
 	"github.com/golang/snappy"
 
@@ -33,7 +35,6 @@ import (
 	"github.com/prometheus/prometheus/model/exemplar"
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/prometheus/prometheus/prompb"
-	writev2 "github.com/prometheus/prometheus/prompb/write/v2"
 	"github.com/prometheus/prometheus/storage"
 	otlptranslator "github.com/prometheus/prometheus/storage/remote/otlptranslator/prometheusremotewrite"
 )
